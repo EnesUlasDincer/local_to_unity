@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main_node.dir/src/main.cpp.o -o main_node  /usr/lib/x86_64-linux-gnu/libzmq.so 
