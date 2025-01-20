@@ -73,15 +73,15 @@ CMakeFiles/main_node.dir/src/main.cpp.o: CMakeFiles/main_node.dir/flags.make
 CMakeFiles/main_node.dir/src/main.cpp.o: /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp
 CMakeFiles/main_node.dir/src/main.cpp.o: CMakeFiles/main_node.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main_node.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main_node.dir/src/main.cpp.o -MF CMakeFiles/main_node.dir/src/main.cpp.o.d -o CMakeFiles/main_node.dir/src/main.cpp.o -c /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main_node.dir/src/main.cpp.o -MF CMakeFiles/main_node.dir/src/main.cpp.o.d -o CMakeFiles/main_node.dir/src/main.cpp.o -c /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp
 
 CMakeFiles/main_node.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main_node.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp > CMakeFiles/main_node.dir/src/main.cpp.i
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp > CMakeFiles/main_node.dir/src/main.cpp.i
 
 CMakeFiles/main_node.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main_node.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp -o CMakeFiles/main_node.dir/src/main.cpp.s
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/enes/Desktop/PhD/Communication/Local_to_unity/src/main.cpp -o CMakeFiles/main_node.dir/src/main.cpp.s
 
 # Object files for target main_node
 main_node_OBJECTS = \
@@ -92,7 +92,14 @@ main_node_EXTERNAL_OBJECTS =
 
 main_node: CMakeFiles/main_node.dir/src/main.cpp.o
 main_node: CMakeFiles/main_node.dir/build.make
+main_node: /home/enes/Desktop/ORBBEC/OrbbecSDK/lib/linux_x64/libOrbbecSDK.so
+main_node: /home/enes/Desktop/ORBBEC/OrbbecSDK/lib/linux_x64/libdepthengine.so
+main_node: /home/enes/Desktop/ORBBEC/OrbbecSDK/lib/linux_x64/libob_usb.so
+main_node: /home/enes/Desktop/ORBBEC/OrbbecSDK/lib/linux_x64/liblive555.so
+main_node: libVoxelGrid.a
 main_node: /usr/lib/x86_64-linux-gnu/libzmq.so
+main_node: /usr/lib/x86_64-linux-gnu/libcudart_static.a
+main_node: /usr/lib/x86_64-linux-gnu/librt.a
 main_node: CMakeFiles/main_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main_node.dir/link.txt --verbose=$(VERBOSE)

@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/enes/Desktop/PhD/Communication/Local_to_unity/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/VoxelGrid.dir/all
 all: CMakeFiles/main_node.dir/all
 .PHONY : all
 
@@ -71,22 +72,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/VoxelGrid.dir/clean
 clean: CMakeFiles/main_node.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/VoxelGrid.dir
+
+# All Build rule for target.
+CMakeFiles/VoxelGrid.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelGrid.dir/build.make CMakeFiles/VoxelGrid.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelGrid.dir/build.make CMakeFiles/VoxelGrid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles --progress-num=1,2 "Built target VoxelGrid"
+.PHONY : CMakeFiles/VoxelGrid.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/VoxelGrid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VoxelGrid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles 0
+.PHONY : CMakeFiles/VoxelGrid.dir/rule
+
+# Convenience name for target.
+VoxelGrid: CMakeFiles/VoxelGrid.dir/rule
+.PHONY : VoxelGrid
+
+# clean rule for target.
+CMakeFiles/VoxelGrid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelGrid.dir/build.make CMakeFiles/VoxelGrid.dir/clean
+.PHONY : CMakeFiles/VoxelGrid.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main_node.dir
 
 # All Build rule for target.
-CMakeFiles/main_node.dir/all:
+CMakeFiles/main_node.dir/all: CMakeFiles/VoxelGrid.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles --progress-num=1,2 "Built target main_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles --progress-num=3,4 "Built target main_node"
 .PHONY : CMakeFiles/main_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enes/Desktop/PhD/Communication/Local_to_unity/build/CMakeFiles 0
 .PHONY : CMakeFiles/main_node.dir/rule

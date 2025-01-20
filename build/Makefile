@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named VoxelGrid
+
+# Build rule for target.
+VoxelGrid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VoxelGrid
+.PHONY : VoxelGrid
+
+# fast build rule for target.
+VoxelGrid/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelGrid.dir/build.make CMakeFiles/VoxelGrid.dir/build
+.PHONY : VoxelGrid/fast
+
+#=============================================================================
 # Target rules for targets named main_node
 
 # Build rule for target.
@@ -210,6 +223,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... VoxelGrid"
 	@echo "... main_node"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

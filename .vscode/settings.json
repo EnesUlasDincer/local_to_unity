@@ -67,6 +67,15 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "format": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "alignedvector3": "cpp",
+        "__config": "cpp",
+        "unordered_set": "cpp",
+        "hash_map": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "filesystem": "cpp"
     }
 }

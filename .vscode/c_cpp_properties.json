@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/pcl-1.14"
+                "/usr/include/pcl-1.14",
+                "/home/enes/Desktop/PhD/Repos/eigen",
+                "/home/enes/Desktop/ORBBEC/OrbbecSDK/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
